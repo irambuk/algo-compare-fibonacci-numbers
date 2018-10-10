@@ -91,7 +91,7 @@ public long CalculateFibonacciNumber(int number)
 |34|5702887|411.6255|5702887|0.0006|
 
 ### Time Comparison - Chart
-![alt Performance comparision](images\performance-compare.png)
+![image Performance comparison](./images/performance-compare.png)
 
 ### Notes
 #### Recursion Benefits
