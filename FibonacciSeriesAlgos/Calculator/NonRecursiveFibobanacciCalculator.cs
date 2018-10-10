@@ -4,7 +4,7 @@ namespace FibonacciSeriesAlgos.Calculator
 {
     public class NonRecursiveFibobanacciCalculator : IFibobanacciCalculator
     {
-        public long CalculateFibonacciSeries(int number)
+        public long CalculateFibonacciNumber(int number)
         {
             if (number < 0)
             {

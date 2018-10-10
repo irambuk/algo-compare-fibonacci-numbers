@@ -6,7 +6,7 @@ Highlight the risk of using recursive algorithms
 ### Recursive Algorithm to Implement Fibonacci Series
 With recursion, fibonacci(n)=fibonacci(n-1)+fibonacci(n-2)
 ```
-public long CalculateFibonacciSeries(int number)
+public long CalculateFibonacciNumber(int number)
 {
     if (number < 0)
     {
@@ -20,13 +20,13 @@ public long CalculateFibonacciSeries(int number)
     {
         return 1;
     }
-    return CalculateFibonacciSeries(number-1) + CalculateFibonacciSeries(number - 2);
+    return CalculateFibonacciNumber(number-1) + CalculateFibonacciNumber(number - 2);
 }
 ```
 ### Non Recursive Algorithm to Implement Fibonacci Series
 There are multiple ways to implement the non-recursive Fibonacci series, below is one such appraoch:
 ```
-public long CalculateFibonacciSeries(int number)
+public long CalculateFibonacciNumber(int number)
 {
     if (number < 0)
     {
@@ -91,7 +91,7 @@ public long CalculateFibonacciSeries(int number)
 |34|5702887|411.6255|5702887|0.0006|
 
 ### Time Comparison - Chart
-
+![alt Performance comparision](images/performance-compare.png)
 
 ### Notes
 #### Recursion Benefits
@@ -100,3 +100,9 @@ public long CalculateFibonacciSeries(int number)
 #### Recursion Disadvantages
 - Slower execution, especially when the no of recursions increase
 - Higher memory usage, possibility for memory stack over flow error
+
+### Conclusion
+Never use recursion based algorithms for larger no. of recrusions. Try to find an appraoch to remove the recursion.
+
+### Feedback
+Let me know your thoughts on the appraoch.

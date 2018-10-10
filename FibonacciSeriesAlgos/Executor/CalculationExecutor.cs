@@ -24,7 +24,7 @@ namespace FibonacciSeriesAlgos.Executor
             try
             {
                 var now1 = DateTime.Now;
-                var recursiveResult = _recursiveCalculator.CalculateFibonacciSeries(index);
+                var recursiveResult = _recursiveCalculator.CalculateFibonacciNumber(index);
                 var now2 = DateTime.Now;
                 var recursiveTimeDiff = now2.Subtract(now1).TotalMilliseconds;
 
@@ -40,7 +40,7 @@ namespace FibonacciSeriesAlgos.Executor
             try
             {
                 var now3 = DateTime.Now;
-                var nonRecursiveResult = _nonRecursiveCalculator.CalculateFibonacciSeries(index);
+                var nonRecursiveResult = _nonRecursiveCalculator.CalculateFibonacciNumber(index);
                 var now4 = DateTime.Now;
                 var nonRecursiveTimeDiff = now4.Subtract(now3).TotalMilliseconds;
 

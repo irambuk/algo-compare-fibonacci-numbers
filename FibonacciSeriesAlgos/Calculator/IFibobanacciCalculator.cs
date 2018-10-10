@@ -6,6 +6,6 @@ namespace FibonacciSeriesAlgos.Calculator
 {
     public interface IFibobanacciCalculator
     {
-        long CalculateFibonacciSeries(int number);
+        long CalculateFibonacciNumber(int number);
     }
 }
