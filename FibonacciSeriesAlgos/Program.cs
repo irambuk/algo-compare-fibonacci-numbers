@@ -35,7 +35,7 @@ namespace FibonacciSeriesAlgos
             executor.Execute(10);
 
             //execution - generate a comma separate data for further analysis
-            WriteDataTableHeader("Index", "Recursive Result", "Recursive Time(ms)", "Non-Recursive Result", "Non-Recursive Time (ms)");
+            WriteDataTableHeader("Index", "Recursive Result", "Recursive Time(ms)", "Recursive Time(ms) - Log", "Non-Recursive Result", "Non-Recursive Time (ms)");
             for (int i = 1; i < argsResult.MaxIndex; i++)
             {
                 var result = executor.Execute(i);
@@ -48,15 +48,15 @@ namespace FibonacciSeriesAlgos
             return 0;
         }
 
-        private static void WriteDataTableHeader(string header1, string header2, string header3, string header4, string header5)
+        private static void WriteDataTableHeader(string header1, string header2, string header3, string header4, string header5, string header6)
         {
-            Console.WriteLine($"|{header1}|{header2}|{header3}|{header4}|{header5}|");
-            Console.WriteLine($"|-----------|-----------|-----------|-----------|-----------|");
+            Console.WriteLine($"|{header1}|{header2}|{header3}|{header4}|{header5}|{header6}|");
+            Console.WriteLine($"|-----------|-----------|-----------|-----------|-----------|-----------|");
         }
 
         private static void WriteDataTableRow(int index, long recursiveResult, double recursiveTime, long nonRecursiveResult, double nonRecursiveTime)
         {
-            Console.WriteLine($"|{index}|{recursiveResult}|{recursiveTime}|{nonRecursiveResult}|{nonRecursiveTime}|");
+            Console.WriteLine($"|{index}|{recursiveResult}|{recursiveTime}|{Math.Log10(recursiveTime)}|{nonRecursiveResult}|{nonRecursiveTime}|");
         }
     }
 }
