@@ -98,6 +98,8 @@ public long CalculateFibonacciNumber(int number)
 ### Time Comparison - Chart
 ![image Performance comparison](https://github.com/irambuk/fibonacci-series-algos/blob/master/Images/performance-compare.png)
 
+![image Performance comparison log()](https://github.com/irambuk/fibonacci-series-algos/blob/master/Images/performance-compare-log.png)
+
 ### Notes
 #### Recursion Benefits
 - Few lines to implement the algorithm
